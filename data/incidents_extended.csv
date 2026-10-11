@@ -1,0 +1,211 @@
+incident_id,narrative,target_category,target_severity,site,date,source
+X001,"Minor first aid case, technician scraped hand while opening panel at inverter station, Substation 220kV, investigation started",safety,low,Solar Park A,2026-03-24,synthetic
+X002,Toolbox talk not recorded for morning shift at wind turbine,safety,low,Solar Park B,2026-01-03,synthetic
+X003,"Housekeeping lapse noticed near access road, loose tools left on the floor, investigation started",safety,low,Solar Park B,2026-09-14,synthetic
+X004,"Safety signage missing at diesel generator, replaced the same day",safety,low,BESS Yard,2026-01-25,synthetic
+X005,"Housekeeping lapse noticed near battery container, loose tools left on the floor, investigation started",safety,low,Solar Park A,2026-06-04,synthetic
+X006,"Safety signage missing at wind turbine, replaced the same day",safety,low,Solar Park A,2026-05-26,synthetic
+X007,"Safety signage missing at access road, replaced the same day",safety,low,Hydro Plant 1,2026-07-03,synthetic
+X008,"Worker reported a minor trip over a cable cover at substation bay, no injury",safety,low,Solar Park B,2026-06-19,synthetic
+X009,"Minor first aid case, technician scraped hand while opening panel at inverter station, Substation 220kV, photos attached",safety,low,Solar Park B,2026-02-28,synthetic
+X010,"Minor first aid case, technician scraped hand while opening panel at battery container, Wind Farm North",safety,low,Wind Farm North,2026-06-06,synthetic
+X011,"Worker reported a minor trip over a cable cover at transformer yard, no injury, reported by shift in-charge",safety,low,Substation 220kV,2026-03-18,synthetic
+X012,"Housekeeping lapse noticed near cable trench, loose tools left on the floor",safety,low,Substation 220kV,2026-09-08,synthetic
+X013,"Worker reported a minor trip over a cable cover at inverter station, no injury",safety,low,Wind Farm North,2026-06-13,synthetic
+X014,"Minor first aid case, technician scraped hand while opening panel at transformer yard, Hydro Plant 1",safety,low,Substation 220kV,2026-06-07,synthetic
+X015,"Safety signage missing at battery container, replaced the same day",safety,low,Solar Park B,2026-05-05,synthetic
+X016,Toolbox talk not recorded for morning shift at access road,safety,low,Wind Farm Ridge,2026-07-19,synthetic
+X017,"Worker reported a minor trip over a cable cover at transformer yard, no injury",safety,low,Solar Park A,2026-02-25,synthetic
+X018,"Minor first aid case, technician scraped hand while opening panel at cable trench, Substation 220kV, CAPA raised",safety,low,Wind Farm Ridge,2026-02-13,synthetic
+X019,"Toolbox talk not recorded for morning shift at control room, reported by shift in-charge",safety,low,Hydro Plant 1,2026-02-22,synthetic
+X020,"Worker reported a minor trip over a cable cover at substation bay, no injury, CAPA raised",safety,low,Solar Park A,2026-03-15,synthetic
+X021,"Worker reported a minor trip over a cable cover at access road, no injury, reported by shift in-charge",safety,low,Substation 220kV,2026-05-27,synthetic
+X022,"Toolbox talk not recorded for morning shift at diesel generator, investigation started",safety,low,Hydro Plant 1,2026-09-25,synthetic
+X023,"Minor first aid case, technician scraped hand while opening panel at diesel generator, Wind Farm North",safety,low,BESS Yard,2026-02-12,synthetic
+X025,"Minor first aid case, technician scraped hand while opening panel at access road, BESS Yard, CAPA raised",safety,low,Wind Farm North,2026-09-06,synthetic
+X026,"Worker experienced heat exhaustion during panel cleaning near diesel generator, rested and recovered",safety,medium,Substation 220kV,2026-09-25,synthetic
+X027,Unauthorised person entered restricted area around transformer yard at Substation 220kV,safety,medium,Hydro Plant 1,2026-06-15,synthetic
+X028,"Ladder used without secondary support at wind turbine, supervisor stopped the job, photos attached",safety,medium,Hydro Plant 1,2026-01-19,synthetic
+X029,"Contractor slipped on wet surface near diesel generator at Solar Park B, minor injury, first aid given, reported by shift in-charge",safety,medium,Solar Park A,2026-04-03,synthetic
+X030,"Lock-out tag-out procedure not followed fully during maintenance of wind turbine, CAPA raised",safety,medium,Solar Park B,2026-04-18,synthetic
+X031,Unauthorised person entered restricted area around diesel generator at Hydro Plant 1,safety,medium,Wind Farm Ridge,2026-08-26,synthetic
+X032,"Contractor slipped on wet surface near wind turbine at Solar Park A, minor injury, first aid given",safety,medium,Wind Farm Ridge,2026-06-14,synthetic
+X033,"Ladder used without secondary support at inverter station, supervisor stopped the job",safety,medium,Wind Farm Ridge,2026-02-02,synthetic
+X034,Unauthorised person entered restricted area around gearbox bay at BESS Yard,safety,medium,Solar Park B,2026-04-07,synthetic
+X035,"Worker experienced heat exhaustion during panel cleaning near control room, rested and recovered",safety,medium,Solar Park B,2026-05-15,synthetic
+X036,"PPE non-compliance observed, helmet and gloves not worn during work at control room",safety,medium,Solar Park A,2026-09-04,synthetic
+X037,"Unauthorised person entered restricted area around access road at BESS Yard, reported by shift in-charge",safety,medium,Wind Farm Ridge,2026-04-06,synthetic
+X038,"Ladder used without secondary support at control room, supervisor stopped the job",safety,medium,Wind Farm Ridge,2026-01-06,synthetic
+X039,"PPE non-compliance observed, helmet and gloves not worn during work at battery container",safety,medium,Wind Farm Ridge,2026-08-10,synthetic
+X040,Unauthorised person entered restricted area around access road at Substation 220kV,safety,medium,Wind Farm North,2026-03-07,synthetic
+X041,"Contractor slipped on wet surface near inverter station at Hydro Plant 1, minor injury, first aid given",safety,medium,Wind Farm North,2026-01-24,synthetic
+X042,"PPE non-compliance observed, helmet and gloves not worn during work at inverter station",safety,medium,Solar Park A,2026-09-06,synthetic
+X043,"Worker experienced heat exhaustion during panel cleaning near wind turbine, rested and recovered, reported by shift in-charge",safety,medium,Solar Park A,2026-04-13,synthetic
+X044,"Worker experienced heat exhaustion during panel cleaning near transformer yard, rested and recovered",safety,medium,Substation 220kV,2026-02-14,synthetic
+X046,"Unauthorised person entered restricted area around gearbox bay at Solar Park B, investigation started",safety,medium,Wind Farm North,2026-05-15,synthetic
+X048,"Contractor slipped on wet surface near access road at Wind Farm North, minor injury, first aid given, photos attached",safety,medium,Wind Farm North,2026-02-08,synthetic
+X049,Lock-out tag-out procedure not followed fully during maintenance of cable trench,safety,medium,BESS Yard,2026-05-20,synthetic
+X050,Unauthorised person entered restricted area around access road at Solar Park A,safety,medium,Substation 220kV,2026-09-10,synthetic
+X051,"PPE non-compliance observed, helmet and gloves not worn during work at cable trench, reported by shift in-charge",safety,medium,Wind Farm North,2026-09-05,synthetic
+X052,Lock-out tag-out procedure not followed fully during maintenance of diesel generator,safety,medium,Substation 220kV,2026-04-22,synthetic
+X053,"Lock-out tag-out procedure not followed fully during maintenance of access road, reported by shift in-charge",safety,medium,Wind Farm Ridge,2026-02-21,synthetic
+X054,Lock-out tag-out procedure not followed fully during maintenance of inverter station,safety,medium,Wind Farm North,2026-03-21,synthetic
+X055,"Contractor slipped on wet surface near control room at Hydro Plant 1, minor injury, first aid given",safety,medium,Solar Park A,2026-09-01,synthetic
+X056,"Near miss: vehicle reversing close to workers near cable trench during night shift, photos attached",safety,high,Wind Farm Ridge,2026-09-05,synthetic
+X057,"Electrical flash observed while opening live panel at inverter station, technician moved away unhurt",safety,high,Solar Park B,2026-01-12,synthetic
+X058,"Arc fault and burn injury during energisation of transformer yard, worker taken to hospital, CAPA raised",safety,high,BESS Yard,2026-03-08,synthetic
+X059,"Electrical flash observed while opening live panel at cable trench, technician moved away unhurt, photos attached",safety,high,Substation 220kV,2026-07-26,synthetic
+X060,"Dropped object from nacelle landed near ground crew at transformer yard, near miss, reported by shift in-charge",safety,high,Solar Park A,2026-07-28,synthetic
+X061,"Dropped object from nacelle landed near ground crew at control room, near miss, CAPA raised",safety,high,BESS Yard,2026-06-10,synthetic
+X062,"Dropped object from nacelle landed near ground crew at transformer yard, near miss, investigation started",safety,high,Wind Farm North,2026-07-11,synthetic
+X063,"Dropped object from nacelle landed near ground crew at wind turbine, near miss, CAPA raised",safety,high,Solar Park A,2026-09-11,synthetic
+X064,Near miss: vehicle reversing close to workers near module cleaning area during night shift,safety,high,Solar Park A,2026-05-02,synthetic
+X065,Lost time injury: technician fractured arm when a heavy cover fell at battery container,safety,high,Hydro Plant 1,2026-06-14,synthetic
+X066,Lost time injury: technician fractured arm when a heavy cover fell at wind turbine,safety,high,Solar Park A,2026-04-09,synthetic
+X067,"Arc fault and burn injury during energisation of battery container, worker taken to hospital",safety,high,Substation 220kV,2026-09-22,synthetic
+X068,"Arc fault and burn injury during energisation of substation bay, worker taken to hospital",safety,high,Wind Farm North,2026-02-22,synthetic
+X069,Lost time injury: technician fractured arm when a heavy cover fell at gearbox bay,safety,high,Wind Farm North,2026-05-17,synthetic
+X071,"Electrical flash observed while opening live panel at battery container, technician moved away unhurt",safety,high,Hydro Plant 1,2026-03-20,synthetic
+X072,"Fall from height near miss while climbing battery container, harness anchor point not used",safety,high,Solar Park B,2026-05-10,synthetic
+X073,"Fire started in diesel generator at Hydro Plant 1, extinguished with portable extinguishers, evacuation done",safety,high,Wind Farm Ridge,2026-08-15,synthetic
+X074,"Arc fault and burn injury during energisation of transformer yard, worker taken to hospital",safety,high,Solar Park A,2026-03-22,synthetic
+X075,"Fall from height near miss while climbing access road, harness anchor point not used",safety,high,BESS Yard,2026-06-03,synthetic
+X076,"Dropped object from nacelle landed near ground crew at transformer yard, near miss",safety,high,Solar Park A,2026-04-05,synthetic
+X077,Near miss: vehicle reversing close to workers near transformer yard during night shift,safety,high,Wind Farm Ridge,2026-02-15,synthetic
+X078,"Arc fault and burn injury during energisation of diesel generator, worker taken to hospital",safety,high,Wind Farm Ridge,2026-07-16,synthetic
+X079,"Electrical flash observed while opening live panel at cable trench, technician moved away unhurt",safety,high,Wind Farm Ridge,2026-02-25,synthetic
+X081,"Noise complaint logged from nearby village about transformer yard, within permissible limits, investigation started",environment,low,Hydro Plant 1,2026-08-22,synthetic
+X082,"Noise complaint logged from nearby village about diesel generator, within permissible limits",environment,low,BESS Yard,2026-08-20,synthetic
+X083,"Noise complaint logged from nearby village about access road, within permissible limits",environment,low,Solar Park B,2026-09-15,synthetic
+X084,"Noise complaint logged from nearby village about control room, within permissible limits, investigation started",environment,low,BESS Yard,2026-05-25,synthetic
+X085,"Noise complaint logged from nearby village about control room, within permissible limits, CAPA raised",environment,low,Wind Farm North,2026-02-23,synthetic
+X086,Small amount of waste packaging left outside designated bin near module cleaning area,environment,low,Solar Park B,2026-09-03,synthetic
+X087,Small amount of waste packaging left outside designated bin near transformer yard,environment,low,Wind Farm Ridge,2026-04-03,synthetic
+X088,"Minor dust generation during road grading near gearbox bay, water sprayed",environment,low,BESS Yard,2026-01-07,synthetic
+X089,"Minor dust generation during road grading near battery container, water sprayed",environment,low,BESS Yard,2026-01-28,synthetic
+X090,"Noise complaint logged from nearby village about battery container, within permissible limits, photos attached",environment,low,Wind Farm Ridge,2026-05-25,synthetic
+X091,"Minor dust generation during road grading near access road, water sprayed",environment,low,Solar Park B,2026-04-16,synthetic
+X092,"Minor dust generation during road grading near battery container, water sprayed, photos attached",environment,low,Solar Park B,2026-07-24,synthetic
+X093,"Minor dust generation during road grading near cable trench, water sprayed",environment,low,Hydro Plant 1,2026-07-19,synthetic
+X094,"Noise complaint logged from nearby village about inverter station, within permissible limits",environment,low,Wind Farm Ridge,2026-03-28,synthetic
+X095,Small amount of waste packaging left outside designated bin near inverter station,environment,low,Wind Farm North,2026-04-15,synthetic
+X097,Small amount of waste packaging left outside designated bin near control room,environment,low,Solar Park B,2026-01-12,synthetic
+X098,"Noise complaint logged from nearby village about wind turbine, within permissible limits",environment,low,Solar Park A,2026-01-25,synthetic
+X099,"Small amount of waste packaging left outside designated bin near transformer yard, investigation started",environment,low,Wind Farm Ridge,2026-04-05,synthetic
+X103,"Minor dust generation during road grading near battery container, water sprayed, investigation started",environment,low,BESS Yard,2026-02-23,synthetic
+X104,"Minor dust generation during road grading near substation bay, water sprayed",environment,low,Hydro Plant 1,2026-01-12,synthetic
+X105,"Minor dust generation during road grading near substation bay, water sprayed, photos attached",environment,low,Wind Farm Ridge,2026-01-28,synthetic
+X106,"Wastewater overflow from cleaning tank at wind turbine, collected manually",environment,medium,Solar Park B,2026-08-23,synthetic
+X107,"Wastewater overflow from cleaning tank at cable trench, collected manually",environment,medium,BESS Yard,2026-05-20,synthetic
+X108,"Excess diesel consumption recorded for control room, suspected leakage in fuel line",environment,medium,BESS Yard,2026-05-11,synthetic
+X109,Used oil stored without secondary containment near wind turbine at Wind Farm North,environment,medium,Wind Farm Ridge,2026-04-25,synthetic
+X110,"Excess diesel consumption recorded for diesel generator, suspected leakage in fuel line",environment,medium,BESS Yard,2026-01-16,synthetic
+X111,"Vegetation cleared beyond approved boundary near cable trench, photos attached",environment,medium,Hydro Plant 1,2026-06-09,synthetic
+X112,Vegetation cleared beyond approved boundary near access road,environment,medium,Solar Park B,2026-04-03,synthetic
+X113,"Wastewater overflow from cleaning tank at control room, collected manually",environment,medium,Substation 220kV,2026-08-21,synthetic
+X114,"Wastewater overflow from cleaning tank at control room, collected manually, photos attached",environment,medium,Substation 220kV,2026-04-13,synthetic
+X115,Used oil stored without secondary containment near module cleaning area at Substation 220kV,environment,medium,Hydro Plant 1,2026-08-18,synthetic
+X116,Vegetation cleared beyond approved boundary near battery container,environment,medium,Wind Farm Ridge,2026-06-23,synthetic
+X117,"Vegetation cleared beyond approved boundary near module cleaning area, investigation started",environment,medium,Substation 220kV,2026-06-04,synthetic
+X118,"Excess diesel consumption recorded for cable trench, suspected leakage in fuel line, CAPA raised",environment,medium,Hydro Plant 1,2026-05-24,synthetic
+X120,"Vegetation cleared beyond approved boundary near cable trench, investigation started",environment,medium,Solar Park A,2026-05-02,synthetic
+X121,"Excess diesel consumption recorded for module cleaning area, suspected leakage in fuel line",environment,medium,BESS Yard,2026-08-04,synthetic
+X122,Water usage spike during module cleaning due to valve leakage at diesel generator,environment,medium,Solar Park B,2026-08-11,synthetic
+X123,Water usage spike during module cleaning due to valve leakage at module cleaning area,environment,medium,Wind Farm Ridge,2026-02-13,synthetic
+X126,"Wastewater overflow from cleaning tank at diesel generator, collected manually",environment,medium,Hydro Plant 1,2026-04-25,synthetic
+X127,"Wastewater overflow from cleaning tank at control room, collected manually, CAPA raised",environment,medium,Hydro Plant 1,2026-05-19,synthetic
+X128,"Water usage spike during module cleaning due to valve leakage at diesel generator, investigation started",environment,medium,Substation 220kV,2026-04-09,synthetic
+X129,"Water usage spike during module cleaning due to valve leakage at cable trench, reported by shift in-charge",environment,medium,Wind Farm Ridge,2026-03-01,synthetic
+X130,"Wastewater overflow from cleaning tank at diesel generator, collected manually, investigation started",environment,medium,Wind Farm North,2026-05-23,synthetic
+X131,"Wastewater overflow from cleaning tank at wind turbine, collected manually, photos attached",environment,medium,Solar Park A,2026-04-14,synthetic
+X132,"Excess diesel consumption recorded for transformer yard, suspected leakage in fuel line, photos attached",environment,medium,Solar Park A,2026-03-03,synthetic
+X133,Used oil stored without secondary containment near module cleaning area at Hydro Plant 1,environment,medium,Solar Park A,2026-05-15,synthetic
+X134,"Wastewater overflow from cleaning tank at module cleaning area, collected manually",environment,medium,Hydro Plant 1,2026-05-17,synthetic
+X136,"Battery electrolyte leak from module cleaning area, soil contamination suspected, reported by shift in-charge",environment,high,Solar Park A,2026-05-19,synthetic
+X137,"Transformer oil leak at control room, bund overflowed after heavy rain at Hydro Plant 1",environment,high,Hydro Plant 1,2026-05-06,synthetic
+X138,"Bird collision with turbine blades recorded near substation bay, protected species involved",environment,high,Wind Farm North,2026-02-16,synthetic
+X139,"Bird collision with turbine blades recorded near gearbox bay, protected species involved",environment,high,Wind Farm Ridge,2026-03-11,synthetic
+X140,Hazardous waste drums found damaged and leaking near control room,environment,high,BESS Yard,2026-07-27,synthetic
+X141,"Battery electrolyte leak from inverter station, soil contamination suspected, photos attached",environment,high,BESS Yard,2026-06-04,synthetic
+X142,"Bird collision with turbine blades recorded near access road, protected species involved",environment,high,Wind Farm Ridge,2026-09-15,synthetic
+X143,"Oil seepage observed near transformer yard, spill reached soil, contained with spill kit",environment,high,Wind Farm Ridge,2026-08-21,synthetic
+X145,"Bird collision with turbine blades recorded near wind turbine, protected species involved",environment,high,Solar Park B,2026-04-23,synthetic
+X146,"SF6 gas leak alarm triggered at access road, area isolated and gas recovered",environment,high,BESS Yard,2026-02-08,synthetic
+X147,"Oil seepage observed near control room, spill reached soil, contained with spill kit",environment,high,Substation 220kV,2026-03-16,synthetic
+X148,"SF6 gas leak alarm triggered at access road, area isolated and gas recovered, CAPA raised",environment,high,Wind Farm Ridge,2026-08-08,synthetic
+X149,"Battery electrolyte leak from cable trench, soil contamination suspected, investigation started",environment,high,BESS Yard,2026-02-09,synthetic
+X151,"SF6 gas leak alarm triggered at diesel generator, area isolated and gas recovered",environment,high,Solar Park B,2026-08-28,synthetic
+X153,"Bird collision with turbine blades recorded near control room, protected species involved",environment,high,Wind Farm Ridge,2026-04-19,synthetic
+X154,"Transformer oil leak at battery container, bund overflowed after heavy rain at Solar Park A",environment,high,BESS Yard,2026-08-23,synthetic
+X155,"Bird collision with turbine blades recorded near battery container, protected species involved",environment,high,Solar Park A,2026-03-16,synthetic
+X156,"Transformer oil leak at access road, bund overflowed after heavy rain at Hydro Plant 1",environment,high,BESS Yard,2026-02-28,synthetic
+X158,"Bird collision with turbine blades recorded near substation bay, protected species involved, photos attached",environment,high,Substation 220kV,2026-06-20,synthetic
+X161,Vendor safety induction register missing signatures for module cleaning area work,governance,low,BESS Yard,2026-07-04,synthetic
+X162,"Vendor safety induction register missing signatures for wind turbine work, photos attached",governance,low,Wind Farm North,2026-01-02,synthetic
+X163,Monthly safety inspection checklist for module cleaning area submitted two days late,governance,low,Hydro Plant 1,2026-03-08,synthetic
+X164,Training attendance records incomplete for contractors at Substation 220kV,governance,low,Solar Park A,2026-03-06,synthetic
+X165,Vendor safety induction register missing signatures for battery container work,governance,low,Solar Park B,2026-08-19,synthetic
+X166,"Monthly safety inspection checklist for control room submitted two days late, photos attached",governance,low,Wind Farm Ridge,2026-01-26,synthetic
+X167,"Training attendance records incomplete for contractors at Hydro Plant 1, CAPA raised",governance,low,Wind Farm North,2026-06-19,synthetic
+X168,"Vendor safety induction register missing signatures for battery container work, photos attached",governance,low,BESS Yard,2026-04-13,synthetic
+X169,Training attendance records incomplete for contractors at Solar Park B,governance,low,Wind Farm North,2026-06-19,synthetic
+X171,Vendor safety induction register missing signatures for substation bay work,governance,low,Substation 220kV,2026-01-20,synthetic
+X172,Training attendance records incomplete for contractors at BESS Yard,governance,low,Substation 220kV,2026-06-08,synthetic
+X173,Monthly safety inspection checklist for diesel generator submitted two days late,governance,low,Solar Park A,2026-03-21,synthetic
+X175,Training attendance records incomplete for contractors at Solar Park A,governance,low,Wind Farm Ridge,2026-06-24,synthetic
+X176,Monthly safety inspection checklist for transformer yard submitted two days late,governance,low,Hydro Plant 1,2026-06-17,synthetic
+X177,Training attendance records incomplete for contractors at Wind Farm North,governance,low,Wind Farm North,2026-08-26,synthetic
+X178,"Vendor safety induction register missing signatures for gearbox bay work, reported by shift in-charge",governance,low,Solar Park B,2026-03-25,synthetic
+X182,Monthly safety inspection checklist for control room submitted two days late,governance,low,Hydro Plant 1,2026-09-11,synthetic
+X183,Monthly safety inspection checklist for substation bay submitted two days late,governance,low,Wind Farm North,2026-08-23,synthetic
+X184,"Vendor safety induction register missing signatures for battery container work, reported by shift in-charge",governance,low,Solar Park A,2026-05-16,synthetic
+X185,"Monthly safety inspection checklist for transformer yard submitted two days late, CAPA raised",governance,low,Substation 220kV,2026-06-22,synthetic
+X186,Contractor worked at diesel generator with expired medical fitness certificate,governance,medium,Solar Park A,2026-07-21,synthetic
+X188,Waste manifest missing for disposal of scrap from transformer yard,governance,medium,Wind Farm North,2026-04-28,synthetic
+X189,Permit to work for substation bay closed without supervisor countersignature at Wind Farm North,governance,medium,Wind Farm Ridge,2026-06-02,synthetic
+X191,Emission monitoring data for substation bay not uploaded within the reporting window,governance,medium,BESS Yard,2026-01-02,synthetic
+X193,Emission monitoring data for diesel generator not uploaded within the reporting window,governance,medium,BESS Yard,2026-04-11,synthetic
+X194,"Emission monitoring data for diesel generator not uploaded within the reporting window, investigation started",governance,medium,Wind Farm North,2026-03-18,synthetic
+X195,Emission monitoring data for wind turbine not uploaded within the reporting window,governance,medium,Wind Farm North,2026-03-01,synthetic
+X196,"Emission monitoring data for diesel generator not uploaded within the reporting window, photos attached",governance,medium,Substation 220kV,2026-01-05,synthetic
+X197,Contractor worked at access road with expired medical fitness certificate,governance,medium,BESS Yard,2026-08-15,synthetic
+X198,"Waste manifest missing for disposal of scrap from access road, investigation started",governance,medium,BESS Yard,2026-01-24,synthetic
+X199,Waste manifest missing for disposal of scrap from control room,governance,medium,BESS Yard,2026-01-16,synthetic
+X200,"Contractor worked at battery container with expired medical fitness certificate, CAPA raised",governance,medium,Wind Farm North,2026-02-03,synthetic
+X201,"Emission monitoring data for wind turbine not uploaded within the reporting window, photos attached",governance,medium,Hydro Plant 1,2026-07-20,synthetic
+X203,Permit to work for substation bay closed without supervisor countersignature at Substation 220kV,governance,medium,BESS Yard,2026-09-24,synthetic
+X204,Emission monitoring data for battery container not uploaded within the reporting window,governance,medium,BESS Yard,2026-07-11,synthetic
+X205,Contractor worked at battery container with expired medical fitness certificate,governance,medium,Wind Farm North,2026-06-14,synthetic
+X206,Waste manifest missing for disposal of scrap from gearbox bay,governance,medium,Solar Park A,2026-08-03,synthetic
+X207,"Permit to work for wind turbine closed without supervisor countersignature at Wind Farm Ridge, photos attached",governance,medium,Solar Park A,2026-03-18,synthetic
+X208,Waste manifest missing for disposal of scrap from substation bay,governance,medium,Substation 220kV,2026-07-28,synthetic
+X209,Permit to work for module cleaning area closed without supervisor countersignature at Hydro Plant 1,governance,medium,Hydro Plant 1,2026-02-19,synthetic
+X210,Emission monitoring data for cable trench not uploaded within the reporting window,governance,medium,BESS Yard,2026-02-12,synthetic
+X211,"Waste manifest missing for disposal of scrap from wind turbine, investigation started",governance,medium,Hydro Plant 1,2026-07-28,synthetic
+X212,Permit to work for diesel generator closed without supervisor countersignature at Substation 220kV,governance,medium,Solar Park B,2026-05-01,synthetic
+X213,Waste manifest missing for disposal of scrap from module cleaning area,governance,medium,Solar Park B,2026-03-28,synthetic
+X214,Contractor worked at wind turbine with expired medical fitness certificate,governance,medium,Substation 220kV,2026-01-03,synthetic
+X216,"Falsified inspection record found for diesel generator, audit finding raised, reported by shift in-charge",governance,high,BESS Yard,2026-03-06,synthetic
+X217,"Regulatory consent to operate expired for substation bay at Solar Park A, operation continued, CAPA raised",governance,high,Wind Farm Ridge,2026-08-20,synthetic
+X218,"Statutory pressure vessel inspection overdue for module cleaning area, work continued unauthorised",governance,high,Wind Farm Ridge,2026-02-12,synthetic
+X219,"Regulatory consent to operate expired for module cleaning area at Substation 220kV, operation continued",governance,high,Substation 220kV,2026-08-17,synthetic
+X220,"Falsified inspection record found for inverter station, audit finding raised",governance,high,Solar Park B,2026-01-01,synthetic
+X221,"Falsified inspection record found for transformer yard, audit finding raised, photos attached",governance,high,Solar Park A,2026-05-11,synthetic
+X222,"Regulatory consent to operate expired for control room at Substation 220kV, operation continued",governance,high,Hydro Plant 1,2026-03-13,synthetic
+X223,Incident at access road not reported to authority within the mandatory timeline,governance,high,Wind Farm Ridge,2026-06-03,synthetic
+X224,"Regulatory consent to operate expired for battery container at Solar Park A, operation continued",governance,high,Wind Farm North,2026-02-28,synthetic
+X225,"Statutory pressure vessel inspection overdue for diesel generator, work continued unauthorised",governance,high,Solar Park A,2026-07-10,synthetic
+X226,"Statutory pressure vessel inspection overdue for inverter station, work continued unauthorised, CAPA raised",governance,high,Wind Farm Ridge,2026-06-03,synthetic
+X227,"Regulatory consent to operate expired for transformer yard at Wind Farm Ridge, operation continued",governance,high,Wind Farm Ridge,2026-09-03,synthetic
+X228,"Falsified inspection record found for gearbox bay, audit finding raised",governance,high,Hydro Plant 1,2026-03-03,synthetic
+X229,"Regulatory consent to operate expired for access road at Hydro Plant 1, operation continued, photos attached",governance,high,BESS Yard,2026-06-24,synthetic
+X230,"Incident at transformer yard not reported to authority within the mandatory timeline, investigation started",governance,high,Solar Park B,2026-03-20,synthetic
+X231,"Regulatory consent to operate expired for cable trench at BESS Yard, operation continued",governance,high,Hydro Plant 1,2026-08-25,synthetic
+X232,"Statutory pressure vessel inspection overdue for substation bay, work continued unauthorised",governance,high,Substation 220kV,2026-06-28,synthetic
+X233,"Falsified inspection record found for cable trench, audit finding raised, CAPA raised",governance,high,Wind Farm North,2026-05-26,synthetic
+X234,"Regulatory consent to operate expired for gearbox bay at Hydro Plant 1, operation continued, CAPA raised",governance,high,Solar Park A,2026-08-02,synthetic
+X235,"Falsified inspection record found for module cleaning area, audit finding raised",governance,high,Hydro Plant 1,2026-02-20,synthetic
+X236,"Statutory pressure vessel inspection overdue for control room, work continued unauthorised",governance,high,BESS Yard,2026-01-15,synthetic
+X237,Incident at gearbox bay not reported to authority within the mandatory timeline,governance,high,Wind Farm Ridge,2026-03-02,synthetic
+X238,"Regulatory consent to operate expired for gearbox bay at Substation 220kV, operation continued, investigation started",governance,high,Substation 220kV,2026-01-08,synthetic
+X240,"Falsified inspection record found for battery container, audit finding raised",governance,high,Substation 220kV,2026-01-26,synthetic

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ESG / Safety Incident Intelligence</title>
+<style>
+:root{--bg:#f6f8f7;--card:#fff;--ink:#14231c;--mute:#5d6d65;--line:#dfe6e2;--brand:#12372a;
+  --low:#3b8f6a;--med:#d79a1e;--high:#c0392b;--accent:#2a6f97;--bar:#12372a22}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1512;--card:#16201b;--ink:#e6eee9;--mute:#9fb0a7;--line:#27352e;
+  --brand:#7fd1ae;--low:#58b98d;--med:#e3ad3d;--high:#e5675a;--accent:#6bb3da;--bar:#7fd1ae22}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{background:var(--brand);color:#fff;padding:18px 24px}
+@media (prefers-color-scheme:dark){header{color:#0e1512}}
+header h1{margin:0;font-size:20px} header p{margin:2px 0 0;opacity:.85;font-size:13px}
+main{max-width:1180px;margin:0 auto;padding:20px 16px 60px;display:grid;gap:16px}
+.grid{display:grid;gap:16px}.kpis{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.two{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card h2{margin:0 0 10px;font-size:15px}.mute{color:var(--mute)}.small{font-size:12px}
+.kpi b{display:block;font-size:26px}
+.bar{display:grid;grid-template-columns:130px 1fr 34px;gap:8px;align-items:center;margin:5px 0;font-size:13px}
+.track{background:var(--bar);border-radius:6px;height:14px;overflow:hidden}.fill{height:100%;border-radius:6px;background:var(--accent)}
+.badge{display:inline-block;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:600;color:#fff}
+.b-low{background:var(--low)}.b-medium{background:var(--med)}.b-high{background:var(--high)}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:1px 7px;margin:2px 4px 2px 0;font-size:12px}
+textarea{width:100%;min-height:88px;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+button{background:var(--brand);color:#fff;border:0;border-radius:8px;padding:8px 14px;cursor:pointer;font:inherit}
+@media (prefers-color-scheme:dark){button{color:#0e1512}}
+button.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mute);font-weight:600}.scroll{overflow:auto;max-height:380px}
+.stack{display:flex;height:16px;border-radius:5px;overflow:hidden;background:var(--bar)}
+.legend span{margin-right:12px;font-size:12px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}
+select{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:4px}
+pre{background:#0f172a;color:#e5e7eb;padding:10px;border-radius:8px;overflow:auto;font-size:12px;margin:0;max-height:180px}
+ul{margin:6px 0 0;padding-left:18px}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.warn{background:#d79a1e22;border:1px solid var(--med);border-radius:8px;padding:8px 10px;font-size:12px;margin-top:8px}
+</style>
+</head>
+<body>
+<header>
+  <h1>ESG / Safety Incident Intelligence Dashboard</h1>
+  <p>Classifies incident type and severity, surfaces recurring patterns and recommends preventive actions.</p>
+</header>
+<main>
+  <section class="grid kpis" id="kpis"></section>
+
+  <section class="card"><h2>Management summary</h2><div id="mgmt" class="mute">Loading…</div></section>
+
+  <section class="grid two">
+    <div class="card"><h2>Severity</h2><div id="sev"></div></div>
+    <div class="card"><h2>Incident type</h2><div id="cat"></div></div>
+    <div class="card"><h2>Top risk themes</h2><div id="tags"></div></div>
+    <div class="card"><h2>Monthly trend by severity</h2><div id="trend"></div></div>
+  </section>
+
+  <section class="card"><h2>Recurring patterns (asset × risk)</h2>
+    <div class="scroll"><table id="patterns"></table></div></section>
+
+  <section class="card">
+    <h2>Analyse a new incident</h2>
+    <textarea id="txt" placeholder="Describe the incident, e.g. Technician received electric shock while opening live panel at inverter station"></textarea>
+    <div class="row" style="margin-top:8px">
+      <button id="go">Analyse</button>
+      <button class="ghost" data-s="Fire started in battery container at BESS Yard, area evacuated, extinguished with portable extinguishers">Fire example</button>
+      <button class="ghost" data-s="Used oil stored without secondary containment near gearbox bay">Spill example</button>
+      <button class="ghost" data-s="Regulatory consent to operate expired for substation bay, operation continued">Compliance example</button>
+    </div>
+    <div id="result" style="margin-top:12px"></div>
+  </section>
+
+  <section class="card"><h2>Incident register</h2>
+    <div class="row small" style="margin-bottom:8px">
+      <label>Severity <select id="fs"><option value="">all</option><option>high</option><option>medium</option><option>low</option></select></label>
+      <label>Type <select id="fc"><option value="">all</option><option>safety</option><option>environment</option><option>governance</option></select></label>
+    </div>
+    <div class="scroll"><table id="inc"></table></div></section>
+
+  <section class="grid two">
+    <div class="card"><h2>Model evaluation</h2><div id="metrics" class="small"></div></div>
+    <div class="card"><h2>API calls made by this page</h2><pre id="log">No calls yet.</pre></div>
+  </section>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const label=s=>String(s).replace(/_/g,' ');
+const badge=s=>`<span class="badge b-${esc(s)}">${esc(s)}</span>`;
+let logLines=[];
+async function api(path,opts){
+  const t0=performance.now();
+  try{
+    const r=await fetch(path,opts); const j=await r.json();
+    logLines.unshift(`${(opts&&opts.method)||'GET'} ${path} -> ${r.status} (${Math.round(performance.now()-t0)} ms)`);
+    $('log').textContent=logLines.slice(0,12).join('\n'); return j;
+  }catch(e){
+    logLines.unshift(`${path} -> FAILED (${e.message})`); $('log').textContent=logLines.join('\n'); throw e;
+  }
+}
+function bars(el,obj,color){
+  const max=Math.max(1,...Object.values(obj));
+  $(el).innerHTML=Object.entries(obj).map(([k,v])=>`<div class="bar"><span>${esc(label(k))}</span>
+    <div class="track"><div class="fill" style="width:${v/max*100}%;${color&&color[k]?'background:'+color[k]:''}"></div></div><b>${v}</b></div>`).join('');
+}
+const sevColor={low:'var(--low)',medium:'var(--med)',high:'var(--high)'};
+
+async function loadAll(){
+  const [s,p,m,i]=await Promise.all([api('/api/summary'),api('/api/patterns'),api('/api/metrics'),api('/api/incidents?limit=300')]);
+  $('kpis').innerHTML=[['Incidents',s.total],['High severity',s.by_severity.high],['Safety',s.by_category.safety||0],
+    ['Environment',s.by_category.environment||0],['Governance',s.by_category.governance||0]]
+    .map(([a,b])=>`<div class="card kpi"><span class="mute small">${a}</span><b>${b}</b></div>`).join('');
+  $('mgmt').textContent=s.management_summary;
+  bars('sev',s.by_severity,sevColor); bars('cat',s.by_category);
+  bars('tags',Object.fromEntries(s.top_risk_tags.map(t=>[t.tag,t.count])));
+  const mx=Math.max(1,...p.monthly_trend.map(t=>t.low+t.medium+t.high));
+  $('trend').innerHTML=p.monthly_trend.map(t=>{const tot=t.low+t.medium+t.high;
+    return `<div class="bar"><span>${esc(t.month)}</span><div class="stack" style="width:${tot/mx*100}%">
+    <i style="width:${t.high/tot*100}%;background:var(--high)"></i><i style="width:${t.medium/tot*100}%;background:var(--med)"></i><i style="width:${t.low/tot*100}%;background:var(--low)"></i></div><b>${tot}</b></div>`}).join('')+
+    `<div class="legend small mute"><span><i class="dot" style="background:var(--high)"></i>high</span><span><i class="dot" style="background:var(--med)"></i>medium</span><span><i class="dot" style="background:var(--low)"></i>low</span></div>`;
+  $('patterns').innerHTML='<tr><th>Asset</th><th>Risk</th><th>Count</th><th>High</th><th>Suggested preventive action</th></tr>'+
+    p.recurring.map(r=>`<tr><td>${esc(r.asset)}</td><td>${esc(label(r.risk))}</td><td>${r.count}</td><td>${r.high_severity}</td><td>${esc(r.suggestion)}</td></tr>`).join('');
+  window._inc=i; renderInc();
+  const f=m.category, g=m.severity, h=m.real_holdout_train_on_synthetic;
+  $('metrics').innerHTML=`<p><b>Category</b>: accuracy ${f.accuracy}, macro-F1 ${f.macro_f1} (${f.cv_folds}-fold CV)<br>
+    <b>Severity</b>: accuracy ${g.accuracy}, macro-F1 ${g.macro_f1} (${g.cv_folds}-fold CV)</p>
+    ${h?`<p><b>Real-row holdout</b> (train on synthetic, n=${h.category.n}): category ${h.category.accuracy}, severity ${h.severity.accuracy}</p>`:''}
+    <div class="warn">${m.notes.map(esc).join('<br>')}</div>`;
+}
+function renderInc(){
+  const fs=$('fs').value, fc=$('fc').value;
+  const rows=(window._inc||[]).filter(r=>(!fs||r.pred_severity===fs)&&(!fc||r.pred_category===fc));
+  $('inc').innerHTML='<tr><th>ID</th><th>Narrative</th><th>Type</th><th>Severity</th><th>Risk tags</th></tr>'+
+    rows.map(r=>`<tr><td>${esc(r.incident_id)}</td><td>${esc(r.narrative)}</td><td>${esc(r.pred_category)}</td><td>${badge(r.pred_severity)}</td>
+    <td>${(r.tags||[]).map(t=>`<span class="chip">${esc(label(t))}</span>`).join('')}</td></tr>`).join('');
+}
+async function analyse(){
+  const text=$('txt').value.trim(); if(!text){$('result').textContent='Enter a narrative first.';return}
+  $('result').textContent='Analysing…';
+  const r=await api('/api/run',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text})});
+  if(r.error){$('result').textContent=r.error;return}
+  $('result').innerHTML=`<div class="row"><b>Type:</b> ${esc(r.category)} <span class="mute small">(${Math.round(r.category_confidence*100)}%)</span>
+    <b>Severity:</b> ${badge(r.severity)} <span class="mute small">(${Math.round(r.severity_confidence*100)}%${r.severity_rule_override?', raised by safety rule':''})</span></div>
+    <p>${esc(r.summary)}</p>
+    <div>${r.risk_tags.map(t=>`<span class="chip">${esc(label(t))}</span>`).join('')||'<span class="mute">No risk tags matched</span>'}</div>
+    <b>Recommended preventive actions</b><ul>${r.recommended_actions.map(a=>`<li>${esc(a)}</li>`).join('')}</ul>
+    <details style="margin-top:8px"><summary>Evidence</summary>
+      <p class="small">Key terms (type): ${esc(r.evidence.key_terms_category.join(', '))}<br>Key terms (severity): ${esc(r.evidence.key_terms_severity.join(', '))}</p>
+      <table>${r.evidence.similar_incidents.map(s=>`<tr><td>${esc(s.incident_id)}</td><td>${esc(s.narrative)}</td><td>${esc(s.category)}/${esc(s.severity)}</td><td>${s.similarity}</td></tr>`).join('')}</table></details>
+    ${r.low_confidence?'<div class="warn">Low model confidence: please review manually.</div>':''}
+    <p class="mute small">${esc(r.limitations)}</p>`;
+}
+$('go').onclick=analyse;
+document.querySelectorAll('button[data-s]').forEach(b=>b.onclick=()=>{$('txt').value=b.dataset.s;analyse()});
+$('fs').onchange=$('fc').onchange=renderInc;
+loadAll().catch(()=>{$('mgmt').textContent='Backend not reachable. Start it with: uvicorn backend.app:app --reload'});
+</script>
+</body>
+</html>
